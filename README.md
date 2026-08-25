@@ -20,6 +20,15 @@ humans and AI agents.
    `export BRAIN_VAULT="$HOME/path/to/your-brain"`
 4. In Obsidian: **Open folder as vault** → the cloned directory.
 
+To pull later improvements to this template into your vault, add it as a second
+remote and merge (the `/brain:update` plugin skill automates this):
+
+```bash
+git remote add template https://github.com/rcamf/brAIn-template
+git fetch template
+git merge template/main --allow-unrelated-histories   # flag needed on first merge only
+```
+
 ## Claude Code plugin
 
 The companion plugin adds `/brain:init` (does steps 1–3 for you),
@@ -39,6 +48,8 @@ vault as persistent memory:
 - `sessions/` — per-session working memory mirrored by AI sessions from
   repos/worktrees (plans, notes, decision logs — the worktree copies stay put);
   consolidated into topic notes only on request.
+- `repos/` — notes distilled from ingesting code repositories (overview +
+  subsystem notes, stamped with the commit they describe).
 - `templates/` — Obsidian note templates (core Templates plugin is pointed here).
 - `Sessions.base` — an Obsidian Base giving a table overview of all session logs.
 - `CLAUDE.md` — conventions for AI sessions.
