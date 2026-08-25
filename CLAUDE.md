@@ -23,10 +23,11 @@ base, not a codebase.
 - Session folders are promoted into topic notes only when the owner explicitly
   asks to consolidate — never automatically. Consolidated sessions move to
   `sessions/archive/`.
-- `repos/<slug>/` holds notes distilled from ingesting a code repository: an
-  overview note plus subsystem/concept notes, stamped with the commit they
-  describe. Update in place on re-ingest; treat them as snapshots that can go
-  stale.
+- A repo/project's knowledge base lives in its own area folder named after it
+  (e.g. `PadelReplay/`): an overview note named after the repo plus
+  subsystem/concept notes. Sessions working in a repo save their notes there by
+  default. Ingested notes are stamped with the commit they describe and are
+  updated in place on re-ingest.
 - `templates/` holds Obsidian note templates. The `{{title}}`/`{{date}}`
   placeholders are expanded by Obsidian, not by AI — when creating notes, mirror
   a template's structure but write real values, never literal placeholders.

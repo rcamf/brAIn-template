@@ -48,8 +48,9 @@ vault as persistent memory:
 - `sessions/` — per-session working memory mirrored by AI sessions from
   repos/worktrees (plans, notes, decision logs — the worktree copies stay put);
   consolidated into topic notes only on request.
-- `repos/` — notes distilled from ingesting code repositories (overview +
-  subsystem notes, stamped with the commit they describe).
+- `<Project>/` — each repo/project gets an area folder named after it holding
+  its knowledge base (overview + subsystem/topic notes); repo-focused sessions
+  save their notes there by default.
 - `templates/` — Obsidian note templates (core Templates plugin is pointed here).
 - `Sessions.base` — an Obsidian Base giving a table overview of all session logs.
 - `CLAUDE.md` — conventions for AI sessions.
