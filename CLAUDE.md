@@ -7,6 +7,10 @@ base, not a codebase.
 ## Conventions
 
 - One note per topic/entity, filename is the title: `Postgres tuning.md`.
+- Notes live in area folders (e.g. `PadelReplay/`, `Infra/`): pick the existing
+  folder that fits, or create a new area folder for a genuinely new area. Never
+  save a note at the vault root unless the owner explicitly asks — the root
+  holds only `Home.md`, `Inbox.md`, `*.base` files, and the structural folders.
 - Link between notes with Obsidian wikilinks: `[[Postgres tuning]]`. Link liberally;
   a link to a note that doesn't exist yet is fine — it marks something worth writing.
 - Optional YAML frontmatter for metadata (`tags`, `created`, `source`). Don't invent
