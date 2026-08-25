@@ -36,7 +36,9 @@ vault as persistent memory:
 - `Home.md` — entry point; link top-level areas from here.
 - `Inbox.md` — quick capture for unsorted notes.
 - `attachments/` — images and files, referenced as `![[file.png]]`.
-- `sessions/` — per-session working memory written by AI sessions (plans, notes,
-  decision logs) instead of cluttering repos/worktrees; consolidated into topic
-  notes only on request.
+- `sessions/` — per-session working memory mirrored by AI sessions from
+  repos/worktrees (plans, notes, decision logs — the worktree copies stay put);
+  consolidated into topic notes only on request.
+- `templates/` — Obsidian note templates (core Templates plugin is pointed here).
+- `Sessions.base` — an Obsidian Base giving a table overview of all session logs.
 - `CLAUDE.md` — conventions for AI sessions.

@@ -13,11 +13,18 @@ base, not a codebase.
   heavy schemas; plain prose with links beats structure.
 - Attachments (images, PDFs) go in `attachments/`, referenced as `![[file.png]]`.
 - `sessions/<slug>/` holds per-session working memory: plans, notes, and decision
-  logs that AI sessions write here instead of into repos/worktrees. Raw and
-  unpolished is fine there; wikilink to topic notes where relevant.
+  logs that AI sessions mirror here from repos/worktrees. The worktree copy stays
+  where it is — this is the synced, browsable copy. Raw and unpolished is fine;
+  wikilink to topic notes where relevant.
 - Session folders are promoted into topic notes only when the owner explicitly
   asks to consolidate — never automatically. Consolidated sessions move to
   `sessions/archive/`.
+- `templates/` holds Obsidian note templates. The `{{title}}`/`{{date}}`
+  placeholders are expanded by Obsidian, not by AI — when creating notes, mirror
+  a template's structure but write real values, never literal placeholders.
+- `*.base` files are Obsidian Bases: database views (YAML) over note frontmatter
+  properties. Edit them only deliberately; keep frontmatter properties consistent
+  so bases keep working.
 - Never edit files under `.obsidian/` — that's Obsidian's own config.
 
 ## For AI sessions
