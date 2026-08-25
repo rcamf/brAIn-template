@@ -1,7 +1,6 @@
 filters:
   and:
     - file.hasTag("session")
-
 properties:
   note.repo:
     displayName: Repo
@@ -9,15 +8,14 @@ properties:
     displayName: Branch
   note.started:
     displayName: Started
-
 views:
   - type: table
     name: All sessions
     order:
       - file.name
-      - note.repo
-      - note.branch
-      - note.started
+      - repo
+      - branch
+      - started
   - type: table
     name: Active
     filters:
@@ -25,6 +23,6 @@ views:
         - '!file.inFolder("sessions/archive")'
     order:
       - file.name
-      - note.repo
-      - note.branch
-      - note.started
+      - repo
+      - branch
+      - started
