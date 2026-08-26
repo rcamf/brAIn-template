@@ -1,0 +1,39 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"sessions/archive\"",
+      "color": { "a": 1, "rgb": 9079434 }
+    },
+    {
+      "query": "path:sessions",
+      "color": { "a": 1, "rgb": 15308607 }
+    },
+    {
+      "query": "tag:#repo",
+      "color": { "a": 1, "rgb": 5142951 }
+    },
+    {
+      "query": "path:templates",
+      "color": { "a": 1, "rgb": 11565729 }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}
