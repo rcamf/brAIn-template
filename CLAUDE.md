@@ -43,5 +43,8 @@ base, not a codebase.
 - When adding a fact, add wikilinks to related existing notes so the graph stays
   connected.
 - Dates: write absolute dates (2026-08-25), never "yesterday" or "last week".
+- Provenance: knowledge that stems from work in a repo always records the branch
+  and commit it was true of — frontmatter (`source`, `branch`, `commit`) on new
+  notes, an inline `(repo@branch#sha)` at the end of appended entries.
 - After changes, commit with a short message describing the knowledge change
   (e.g. "add note on X", "update Y with Z"). Push if a remote exists.
